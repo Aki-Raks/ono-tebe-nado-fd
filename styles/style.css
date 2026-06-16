@@ -1,13 +1,20 @@
 /* место для вашего кода */
 
+/*НУЖНО ОБНУЛИТЬ настройки текста чтобы не мешали шрифтам*/
+
 header {
   display: grid;
+  grid-template-columns: 1fr  min-content 1fr;
+  align-items:center;
+  column-gap: 50px;/*это будет расстояние между пунктами в целом*/
 }
 
 .nav {
   padding-top: 133px;
   padding-left: 50px;
 }
+/*паддинги действительно раскидывать для элементов в шапке пиксельно*/
+
 
 .list-item{
   list-style-type: none;
@@ -17,6 +24,7 @@ header {
   letter-spacing: 0%;
   font-family:Raleway;
   font-style: normal;
+  margin: 7px; /*Это пример решения раскладки расстояния между пунктами, но может понадобиться флекс*/
 }
 
 .with_underline{
@@ -28,18 +36,48 @@ header {
   height: 105px;
 }
 
+
+
+.contacts {
+  /*max-width: берем из макета;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header_contacts { /*потому что в footer другое выравнивание блока*/
+  justify-self:end;
+}
+
+
+
+
 .cover {
-  width:1100px;
-  height:757px;
+  position: relative;
+  min-width:1100px;
+  min-height:757px;
+  background-color: black;
   background-image: url("./images/lotus.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-px;
-  height:757px;
-  background-image: url("./images/lotus.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+
+.title-text {
+  text-transform:uppercase;
+  color: white;
 }
+
+.description_text {
+  color: white;
+  text-transform:uppercase;
+  font-family:Raleway;
+  font-style: normal;
+}
+
+.overlay {
+  z-index:0;
+}
+
+

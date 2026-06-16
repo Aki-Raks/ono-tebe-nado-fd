@@ -11,7 +11,6 @@
   
   </head>
   <body>
-
       <header>
         <nav class="nav">
             <a class="list-item">
@@ -37,8 +36,16 @@
         </a>
         <address class="contacts">
           <ul class="list">
-            <li class="list-item">+9 999 555 5555</li>
-            <li class="list-item">info@sobaka.ge</li>
+            <li class="list-item">
+              <a href="tel:+99995555555">
+                +9 999 555 5555
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="mailto:info@sobaka.ge">
+                info@sobaka.ge
+              </a>
+            </li>
             <li class="list-item">наб. Принсенграхт 263- 265, Амстердам</li>
           </ul>
         </address>
@@ -55,12 +62,12 @@
             <p class="description_text">Аукцион вещей, в которые никто не верил</p>
             <button class="description_button">Сделать ставку</button>
           </section>
-          <section class="overlay">
+          <div class="overlay">
 
-          </section>          
+          </div>          
         </section>
 
-        <lots class="lots">
+        <section class="lots">
           <h2 class="title">
             Лоты
           </h2>
@@ -121,11 +128,13 @@
             </li>
           </ul>
           <section class="more">
-            <a>посмотреть больше</a>          
+            <a>
+              посмотреть больше
+            </a>          
           </section>
-        </lots>
+        </section>
 
-        <about class="about">
+        <section class="about">
           <section>
             <!--на фоне черного кружочка-->
             <img
@@ -133,7 +142,9 @@
               />
           </section>
           <section class="about_column">
-            <h2>Об аукционе</h2>
+            <h2>
+              Об аукционе
+            </h2>
             <div class="description-block">
               <p>
                 Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
@@ -143,7 +154,7 @@
               </p>
             </div>
           </section>
-        </about>
+        </section>
       </main>      
 
       <footer class="footer">
@@ -160,18 +171,22 @@
             </li>
           </ul>
         </address>
-        <nav class="menu">
-          <ul class="list">
-            <li class="list-item">
-              главная
-            </li>
-            <li class="list-item">
-              посмотреть лоты
-            </li>
-            <li class="list-item">
-              об аукционе
-            </li>
-          </ul>
+        <nav class="nav">
+          <a class="list-item">
+            главная
+          </a>
+          <span> 
+            &#9675
+          </span>
+          <a class="list-item with_underline">
+            посмотреть лоты 
+          </a>
+          <span>
+            &#9675
+          </span>
+          <a class="list-item with_underline">
+            об аукционе
+          </a>
         </nav>
         <section class="socials">
           <a>

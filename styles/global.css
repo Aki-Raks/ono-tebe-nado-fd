@@ -20,9 +20,17 @@ p,
 ul,
 ol,
 li,
-blockquote {
+blockquote,
+a, 
+button {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  box-sizing: border-box;
+  font-style: normal;
 }
 
 a {
