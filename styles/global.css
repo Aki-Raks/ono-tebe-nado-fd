@@ -30,7 +30,7 @@ button {
   font-size: inherit;
   font-weight: normal;
   box-sizing: border-box;
-  font-style: normal;
+  font-style: none;
 }
 
 a {
@@ -43,4 +43,9 @@ img {
 
 button {
   font: inherit;
+  
+}
+
+header {
+  font-family: Raleway, sans-serif;
 }
