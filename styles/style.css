@@ -1,6 +1,5 @@
 /* место для вашего кода */
 
-/*НУЖНО ОБНУЛИТЬ настройки текста чтобы не мешали шрифтам*/
 
 header {
   display: grid;
@@ -14,20 +13,19 @@ header {
 .nav {
   padding-left: 50px;
 }
-
 .list-item{
   list-style-type: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
-
   font-style: normal;
   margin: 6.5px; 
 }
-
 .with_underline{
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .logo_black{
@@ -44,83 +42,75 @@ header {
   margin-left: 184px;
   padding-right: 10px;
 }
-
 .header_contacts { /*потому что в footer другое выравнивание блока*/
   justify-self:end;
 }
-/*ПОЧЕМУ-ТО иначе отображается шрифт, чем в макете, даже после разбора с global*/
 
 
 
 .cover {
   position: relative;
   min-width:1100px;
-  min-height:757px;  
-  background-image: url("../images/lotus.jpg");
+  min-height: 757px;
+  background-image: url("../images/lotus.jpg");  
   background-position: center;
 }
 
 .title {
+  position: absolute;
+  z-index: 3;  
   height: 385px;
   width: 1000px;
-  padding-top: 165px ;
 }
-
 .title-text {
-  text-transform:uppercase;
-  color: white;
+  color: #fff; 
   font-weight: 700;
-  font-style: bold;
+  font-style: Bold;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 30%;
+  text-transform: uppercase;
   font-family: Raleway, sans-serif;
-  text-align: center;
 }
-
-.first_row {
+.text_left {
+  padding-top: 165px;
   padding-left: 50px;
 }
-
-.second_row {
-  padding-top:300px;
+.text_center {
+  margin-top: 20px ;
   padding-left: 380.5px;
 }
-
-.third_row {
-  padding-top: 435px ;
+.text_right {
+  margin-top: 20px ;
   padding-left: 663px ;
 }
 
 .description {
-  z-index: 2;
-  margin-top: 286px ;
-  margin-left: 50px;
-  /*50px 0px 50px;*/
-  width: 1000px;
-  height: 51px;
+  position: absolute;
+  z-index: 3;
+  margin-top: 656px ;
+  margin-left: 50px;  
 }
-
 .description_text {
+  
+  display: inline;
   color: white;
-  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
   word-spacing: 20px;
   text-transform: uppercase;  
 }
-
 .description_button {
+  display: inline-block;
+  margin-left: 67px;
+  margin-bottom: 50px;
   width: 256px;
   height: 51px;
-  border: 3px;
-  border-color: #fff;
-  display: inline-block;
+  border: 2px solid #fff;
+  border-color: #fff;  
   background-color: transparent;
-
   color: #fff;
-  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
@@ -128,44 +118,118 @@ header {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .overlay {
-  z-index:0;
+  position: absolute;
+  inset: 0;
+  z-index:2;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 
 
-
-
-
-
-
-
-.social_img {
-  width: 48px;
-  height: 48px;
+.lots {
+  margin-top: 180px;
+  margin-left: 24px;
 }
 
-
-48px;
-}
-
-
-
+.lots_title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
   text-transform: uppercase;
+  margin-bottom: 27px;
+  margin-left: 40px;
 
 }
 
-.overlay {
-  z-index:0;
+.lots_card {
+  display: flex;
+  gap: 25px 25px;
 }
 
+.card {
+  display: flex;
+  flex-direction:column;
+  list-style: none;
+  position: relative;
+  height: 596px;
+  width: 334px;
+}
+.card a, .card article {
+  height: 100%;
+}
 
+.card article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
+.card h2{
+  font-family: Raleway;
+  position: static;
+  z-index: 3;
+  margin-top: 48px;
+  color: #fff;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+.card p {
+  font-family: Raleway;
+  position: static;
+  z-index: 3;
+  color: #fff;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  margin: 0;
+  margin-top: auto;
+  padding-bottom: 48px;
 
+}
 
+.about_film, .about_book, .about_art {
+  background-size: cover;
+  background-position: center;
+}
+.about_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+.about_book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+.about_art {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.more {
+  margin-top: 30px;
+  margin-left: 40px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-decoration: underline;/*р зачеркивается линией, чего быть не должно*/
+}
 
 
 
@@ -176,7 +240,12 @@ header {
 }
 
 
-height: 48px;
-}
 
-
+/*Чтобы расположить элементы address в колонну, 
+воспользуйтесь возможностями флексбокса и добавьте display: 
+flex; и flex-direction: column; — это выстроит элементы вертикально.
+Обратите внимание: все дочерние элементы стали flex-элементами. 
+Это заставит ссылки растянуться на всю ширину родителя, 
+но нам это не нужно. 
+Чтобы ссылки занимали только нужное для их контента пространство, 
+добавьте свойство align-items: flex-start;*/
