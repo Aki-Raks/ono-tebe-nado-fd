@@ -36,10 +36,12 @@ header {
 
 .contacts {
   max-width: 240px;
+  height: 85px;
   margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-self:end;
+  justify-content: space-between;
   font-family: Raleway;
   font-weight: 400;
   font-style: Regular;
@@ -49,8 +51,8 @@ header {
 
 }
 .header_contacts {
-  align-items: flex-start; /*потому что в footer другое выравнивание блока*/
-  margin-left: 184px;
+  align-items: flex-start; 
+  margin-left: 185px;
   padding-right: 10px;
 }
 
@@ -254,7 +256,7 @@ header {
 }
 
 .logo_background {
-  margin-top: 35px;
+  margin-top: 38px;
   display: grid;
   background-color: #000;
   height: 240px;
@@ -274,6 +276,7 @@ header {
   margin-left: 25px;
 }
 .about_column h2 {
+  margin-top: 3px;
   font-family: Raleway;
   font-weight: 700;
   font-style: Bold;
@@ -317,8 +320,18 @@ header {
   letter-spacing: 0%;
 }
 
+.footer_contacts li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .nav_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  height: 64px;
 }
 
 .socials {
