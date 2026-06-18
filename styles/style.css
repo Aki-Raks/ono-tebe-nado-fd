@@ -19,7 +19,7 @@ header {
   line-height: 100%;
   letter-spacing: 0%;
   font-style: normal;
-  margin-right: 6.5px; 
+  margin-right: 6.5px;
 }
 
 .with_underline {
@@ -31,7 +31,7 @@ header {
 .logo_black {
   width: 148px;
   height: 105px;
-  margin-left: 37px;
+  margin-left: 30.5px;
 }
 
 .contacts {
@@ -66,12 +66,12 @@ header {
 
 .title {
   position: absolute;
-  z-index: 3;  
+  z-index: 3;
   height: 385px;
   width: 1000px;
 }
 .title-text {
-  color: #fff; 
+  color: #fff;
   font-weight: 700;
   font-style: Bold;
   font-size: 100px;
@@ -100,9 +100,9 @@ header {
   position: absolute;
   z-index: 3;
   margin-top: 656px ;
-  margin-left: 50px;  
+  margin-left: 50px;
 }
-.description_text {  
+.description_text {
   display: inline;
   color: white;
   margin-right: 98px;
@@ -112,7 +112,7 @@ header {
   line-height: 28px;
   word-spacing: 20px;
   letter-spacing: 0%;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 .description_button {
   display: inline-block;
@@ -122,7 +122,7 @@ header {
   width: 256px;
   height: 51px;
   border: 1px solid #fff;
-  border-color: #fff;  
+  border-color: #fff;
   background-color: transparent;
   color: #fff;
   font-weight: 400;
@@ -246,7 +246,7 @@ header {
 
 
 .about {
-  margin-top: 120px;
+  margin-top: 122px;
   margin-left: 24px;
   margin-right: 24px;
   display: grid;
@@ -278,7 +278,7 @@ header {
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 47px;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
