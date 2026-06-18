@@ -6,12 +6,11 @@ header {
   grid-template-columns: 1fr  min-content 1fr;
   align-items:center;
   min-height: 293px;
-  min-width: 1100px;
   font-family: Raleway, sans-serif;
 }
 
 .nav {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 .list-item{
   list-style-type: none;
@@ -20,7 +19,7 @@ header {
   line-height: 100%;
   letter-spacing: 0%;
   font-style: normal;
-  margin: 6.5px; 
+  margin-right: 6.5px; 
 }
 
 .with_underline{
@@ -32,11 +31,12 @@ header {
 .logo_black{
   width: 148px;
   height: 105px;
-  padding-left: 37px;
+  margin-left: 37px;
 }
 
 .contacts {
   max-width: 240px;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   justify-self:end;
@@ -76,7 +76,7 @@ header {
   font-style: Bold;
   font-size: 100px;
   line-height: 115%;
-  letter-spacing: 30%;
+  letter-spacing: 30px;
   text-transform: uppercase;
   font-family: Raleway, sans-serif;
 }
@@ -90,29 +90,35 @@ header {
 }
 .text_right {
   margin-top: 20px ;
-  padding-left: 663px ;
+  padding-left: 662px ;
 }
 
 .description {
+  display: flex; /*новое для поправки*/
+  justify-self:end;
+  align-items:center;
   position: absolute;
   z-index: 3;
   margin-top: 656px ;
   margin-left: 50px;  
 }
-.description_text {
-  
+.description_text {  
   display: inline;
   color: white;
+  margin-right: 98px;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
+  line-height: 28px;
   word-spacing: 20px;
+  letter-spacing: 0%;
   text-transform: uppercase;  
 }
 .description_button {
   display: inline-block;
-  margin-left: 67px;
-  margin-bottom: 50px;
+  margin-right: 50px; 
+  /*margin-left: 67px;
+  margin-bottom: 50px;*/
   width: 256px;
   height: 51px;
   border: 1px solid #fff;
@@ -147,7 +153,7 @@ header {
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 47px;
   letter-spacing: 0%;
   text-transform: uppercase;
   margin-bottom: 27px;
