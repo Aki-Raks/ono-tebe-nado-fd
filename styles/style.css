@@ -256,7 +256,7 @@ header {
 }
 
 .logo_background {
-  margin-top: 38px;
+  margin-top: 33px;
   display: grid;
   background-color: #000;
   height: 240px;
@@ -272,7 +272,7 @@ header {
 }
 
 .about_column {
-  margin-top: 133px;
+  margin-top: 130px;
   margin-left: 25px;
 }
 .about_column h2 {
