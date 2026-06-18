@@ -12,7 +12,7 @@ header {
 .nav {
   margin-left: 50px;
 }
-.list-item{
+.list-item {
   list-style-type: none;
   font-weight: 400;
   font-size: 18px;
@@ -22,13 +22,13 @@ header {
   margin-right: 6.5px; 
 }
 
-.with_underline{
+.with_underline {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 
-.logo_black{
+.logo_black {
   width: 148px;
   height: 105px;
   margin-left: 37px;
@@ -185,7 +185,7 @@ header {
   padding-left: 40px;
   padding-right: 40px;
 }
-.card h2{
+.card h2 {
   font-family: Raleway;
   position: static;
   z-index: 3;
@@ -238,7 +238,7 @@ header {
   font-weight: 400;
   font-style: Regular;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 25px;
   letter-spacing: 0%;
   border-bottom:  1px solid #000;
 }
@@ -293,8 +293,6 @@ header {
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
-
-
 }
 
 
