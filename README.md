@@ -1,1 +1,1 @@
-https://github.com/Aki-Raks/ono-tebe-nado-fd.git
+https://github.com/Aki-Raks/ono-tebe-nado-fd/tree/main
