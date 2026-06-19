@@ -17,7 +17,7 @@ header {
   display: flex;
   gap: 33px;
 }
-.menu_item{
+.menu_item {
   list-style: circle;
 }
 
