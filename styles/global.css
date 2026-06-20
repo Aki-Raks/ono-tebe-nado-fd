@@ -34,6 +34,10 @@ button {
   font-family: Raleway, sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   color: inherit;
 }
@@ -50,3 +54,4 @@ button {
 header {
   font-family: Raleway, sans-serif;
 }
+

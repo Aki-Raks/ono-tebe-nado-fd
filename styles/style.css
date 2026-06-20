@@ -2,21 +2,20 @@ header {
   display: grid;
   grid-template-columns: 1fr  min-content 1fr;
   align-items:center;
-  max-height: 293px;
   font-family: Raleway, sans-serif;
-
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
   font-style: normal;
-  padding: 92px 50px 96px;
+  padding: 92px 50px 94px;
 }
 
 .nav ul {
   display: flex;
   gap: 33px;
 }
+
 .menu_item {
   list-style: circle;
 }
@@ -25,10 +24,14 @@ header {
   list-style: none;
 }
 
-.with_underline {
+a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+}
+
+.without_underline {
+  text-decoration: none;
 }
 
 .logo_black {
@@ -40,34 +43,35 @@ header {
 .contacts {
   display: flex;
   flex-direction: column;
-  max-width: 240px;
+  max-width: 240px;  
+  line-height: 24.3px;  
+}
+
+.header_contacts {
   width:100%;
-  min-height: 89px;
-  line-height: 24.3px;
   justify-self: end;
   align-items: flex-start;
   justify-content: space-between;
   font-style: normal;
 }
 
-
-
-
 .cover {
+  padding: 165px 50px 0px 50px;
   position: relative;
-  min-width:1100px;
   min-height: 757px;
   background-image: url("../images/lotus.jpg");  
   background-position: center;
+  background-size: cover;/*Примечание: на макете, судя по расположению изображения, 
+  не применяется cover, потому как при применении этого свойства, картинка смещается на иное, чем без свойства*/
 }
 
 .title {
-  position: absolute;
+  position: relative;
   z-index: 3;
-  height: 385px;
-  width: 1000px;
 }
+
 .title-text {
+  display: block;
   color: #fff;
   font-weight: 700;
   font-style: Bold;
@@ -76,29 +80,33 @@ header {
   letter-spacing: 30px;
   text-transform: uppercase;
   font-family: Raleway, sans-serif;
+  overflow-wrap: break-word;
 }
-.text_left {
-  padding-top: 165px;
-  padding-left: 50px;
+
+.no_letter_spacing {
+  margin-right: -30px;
 }
+
 .text_center {
   margin-top: 20px ;
-  padding-left: 380.5px;
+  text-align: center;
 }
+
 .text_right {
+  text-align: right;
   margin-top: 20px ;
-  padding-left: 664px ;
 }
 
 .description {
   display: flex; 
   justify-self:end;
   align-items:center;
-  position: absolute;
+  position: relative;
   z-index: 3;
-  margin-top: 656px ;
-  margin-left: 50px;
+  margin-top: 106px;
+  margin-bottom: 50px;
 }
+
 .description_text {
   display: inline;
   color: white;
@@ -111,11 +119,12 @@ header {
   letter-spacing: 0%;
   text-transform: uppercase;
 }
+
 .description_button {
   display: inline-block;
-  margin-right: 50px; 
   width: 256px;
-  height: 51px;
+  min-height: 51px;
+  cursor: pointer;
   border: 1px solid #fff;
   border-color: #fff;
   background-color: transparent;
@@ -136,15 +145,13 @@ header {
   background: rgba(0, 0, 0, 0.6);
 }
 
-
-
 .lots {
   margin-top: 180px;
   margin-left: 24px;
 }
 
 .lots_title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -154,6 +161,7 @@ header {
   margin-bottom: 27px;
   margin-left: 40px;
 }
+
 .lots_card {
   display: flex;
   flex-wrap: wrap;
@@ -165,23 +173,25 @@ header {
   flex-direction:column;
   list-style: none;
   position: relative;
-  height: 596px;
+  min-height: 596px;
   width: 334px;
 }
+
 .card a, .card article {
   height: 100%;
 }
+
 .card article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  margin-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
 }
-.card h2 {
-  font-family: Raleway;
+
+.card h3 {
+  font-family: Raleway, sans-serif;
   position: static;
   z-index: 3;
   margin-top: 48px;
@@ -195,32 +205,34 @@ header {
   text-decoration: underline;
   text-decoration-style: solid;
 }
+
 .card p {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   position: static;
   z-index: 3;
   color: #fff;
   font-weight: 400;
-  font-style: Regular;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0%;
   margin: 0;
   margin-top: auto;
-  padding-bottom: 48px;
-
+  margin-bottom: 48px;
 }
 
-.about_film, .about_book, .about_art {
+.card_image {
   background-size: cover;
   background-position: center;
 }
+
 .about_film {
   background-image: url("../images/card-lot-01.jpg");
 }
+
 .about_book {
   background-image: url("../images/card-lot-02.jpg");
 }
+
 .about_art {
   background-image: url("../images/card-lot-03.jpg");
 }
@@ -229,16 +241,13 @@ header {
   display: inline-block;
   margin-top: 30px;
   margin-left: 40px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0%;
-  border-bottom:  1px solid #000;
 }
-
-
 
 .about {
   margin-top: 121px;
@@ -257,6 +266,7 @@ header {
   border-radius: 50%;
   justify-self: center;
 }
+
 .logo_white {
   height: 114px;
   width: 148px;
@@ -269,9 +279,10 @@ header {
   margin-left: 25px;
   padding-right: 3px;
 }
+
 .about_column h2 {
   margin-top: 3px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -279,21 +290,19 @@ header {
   letter-spacing: 0%;
   text-transform: uppercase;
 }
+
 .description_block {
   margin-top: 101px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
 }
-
-
-
 
 .footer {
   line-height: 24px;
@@ -304,20 +313,10 @@ header {
 }
 
 .footer_contacts {
+  font-family: Raleway, sans-serif;
   max-width: 264px;
-  font-family: Raleway;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer_contacts a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-size: 18px;  
 }
 
 .nav_footer {
@@ -329,11 +328,17 @@ header {
   line-height: 20px;
 }
 
-.socials {
+.footer__social-list {
   display: flex;
+  flex-direction: row;
   gap: 48px;
 }
-.social_img {
+
+.footer__social-link {
+  display: flex;
+}
+
+.footer__social-icon {
   width: 48px;
   height: 48px;
 }
