@@ -20,31 +20,32 @@ header {
   list-style: circle;
 }
 
-.menu_item:first-child {
-  list-style: none;
-}
-
 a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 
-.without_underline {
+.header__link_active {
   text-decoration: none;
 }
 
-.logo_black {
+.logo_header {
   width: 148px;
   height: 105px;
   margin-left: 3px;
 }
 
 .contacts {
+  font-family: Raleway, sans-serif; 
+  font-size: 18px;
+  font-weight: 400;/*дублирует то что в родителе - хэдере, но перенесено 
+  сюда чтобы футер тоже подцепил в себя эти свойства*/
   display: flex;
   flex-direction: column;
   max-width: 240px;  
   line-height: 24.3px;  
+  font-style: normal;
 }
 
 .header_contacts {
@@ -52,17 +53,15 @@ a {
   justify-self: end;
   align-items: flex-start;
   justify-content: space-between;
-  font-style: normal;
 }
 
 .cover {
   padding: 165px 50px 0px 50px;
   position: relative;
   min-height: 757px;
-  background-image: url("../images/lotus.jpg");  
+  background-image: url("../images/lotus.png");  
   background-position: center;
-  background-size: cover;/*Примечание: на макете, судя по расположению изображения, 
-  не применяется cover, потому как при применении этого свойства, картинка смещается на иное, чем без свойства*/
+  background-size: cover;/*Спасибо за информацию по картинке, заменила на выгруженную из фигмы, теперь совпадает*/
 }
 
 .title {
@@ -74,7 +73,7 @@ a {
   display: block;
   color: #fff;
   font-weight: 700;
-  font-style: Bold;
+  font-style: bold;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 30px;
@@ -153,7 +152,7 @@ a {
 .lots_title {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-style: Bold;
+  font-style: bold;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0%;
@@ -177,6 +176,24 @@ a {
   width: 334px;
 }
 
+.about_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.about_book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.about_art {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.card_content {
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+
 .card a, .card article {
   height: 100%;
 }
@@ -197,7 +214,7 @@ a {
   margin-top: 48px;
   color: #fff;
   font-weight: 700;
-  font-style: Bold;
+  font-style: bold;
   font-size: 22px;
   line-height: 120%;
   letter-spacing: 0%;
@@ -218,23 +235,6 @@ a {
   margin: 0;
   margin-top: auto;
   margin-bottom: 48px;
-}
-
-.card_image {
-  background-size: cover;
-  background-position: center;
-}
-
-.about_film {
-  background-image: url("../images/card-lot-01.jpg");
-}
-
-.about_book {
-  background-image: url("../images/card-lot-02.jpg");
-}
-
-.about_art {
-  background-image: url("../images/card-lot-03.jpg");
 }
 
 .more {
@@ -267,7 +267,7 @@ a {
   justify-self: center;
 }
 
-.logo_white {
+.logo_in_about_section {
   height: 114px;
   width: 148px;
   justify-self: center;
@@ -284,7 +284,7 @@ a {
   margin-top: 3px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-style: Bold;
+  font-style: bold;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0%;
@@ -312,11 +312,8 @@ a {
   padding: 0 50px 82px 50px;
 }
 
-.footer_contacts {
-  font-family: Raleway, sans-serif;
-  max-width: 264px;
-  font-weight: 400;
-  font-size: 18px;  
+.footer_contacts {  
+  max-width: 264px; 
 }
 
 .nav_footer {
