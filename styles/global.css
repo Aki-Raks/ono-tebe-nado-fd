@@ -25,12 +25,12 @@ a,
 button {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-decoration:none;
   color: inherit;
   font-size: inherit;
   font-weight: normal;
   box-sizing: border-box;
-  font-style: none;
+  font-style: normal;
   font-family: Raleway, sans-serif;
 }
 

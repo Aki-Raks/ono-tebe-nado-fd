@@ -26,7 +26,7 @@ a {
   text-underline-offset: 4px;
 }
 
-.header__link_active {
+.link_active {
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ a {
   display: block;
   color: #fff;
   font-weight: 700;
-  font-style: bold;
+  
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 30px;
@@ -151,8 +151,7 @@ a {
 
 .lots_title {
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-style: bold;
+  font-weight: 700; /*bold убран в принципе так как везде где он нужен, font-weight применяется в цифровом формате*/  
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0%;
@@ -213,8 +212,7 @@ a {
   z-index: 3;
   margin-top: 48px;
   color: #fff;
-  font-weight: 700;
-  font-style: bold;
+  font-weight: 700;  
   font-size: 22px;
   line-height: 120%;
   letter-spacing: 0%;
@@ -284,7 +282,6 @@ a {
   margin-top: 3px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-style: bold;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0%;
